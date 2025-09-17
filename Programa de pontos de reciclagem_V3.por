@@ -1,7 +1,7 @@
 programa {
   inclua biblioteca Util -->U
   //Constante quantidade maxima de Usuários
-  const inteiro MAX_USUARIOS = 5
+  const inteiro MAX_USUARIOS = 2
 
   //Declaração de variaveis e estrutura de dados
   cadeia usuarios[MAX_USUARIOS][2]
@@ -164,10 +164,7 @@ programa {
       escolha (opcao) {
         caso 1:
           limpa()
-          escreva("Eco-Bag por 500 pontos \n")
-          escreva("Digite a quantidade de pontos que deseja trocar: ")
-          leia(pontos)
-          se (pontos == 500 e saldos[indice]>= pontos ){
+          se (saldos[indice]>= pontos ){
           saldos[indice] = saldos[indice] - pontos
           escreva("Sucesso! Você resgatou a Eco-Bag!! \n")
           }senao{
@@ -178,10 +175,7 @@ programa {
 
         caso 2:
           limpa()
-          escreva("Talhers de bambu 400 pontos \n")
-          escreva("Digite a quantidade de pontos que deseja trocar: ")
-          leia(pontos)
-          se (pontos == 400 e saldos[indice]>= pontos ){
+          se (saldos[indice]>= pontos ){
           saldos[indice] = saldos[indice] - pontos
           escreva("Sucesso! Você resgatou Talhers de bambu!! \n")
           }senao{
@@ -192,10 +186,7 @@ programa {
 
         caso 3:
           limpa()
-          escreva("Garrafa Ecológica 300 pontos \n")
-          escreva("Digite a quantidade de pontos que deseja trocar: ")
-          leia(pontos)
-          se (pontos == 300 e saldos[indice]>= pontos ){
+          se ( saldos[indice]>= pontos ){
           saldos[indice] = saldos[indice] - pontos
           escreva("Sucesso! Você resgatou a Garrafa Ecológica!! \n")
           }senao{
@@ -206,10 +197,7 @@ programa {
 
         caso 4:
           limpa()
-          escreva("Canudo Metálico Reutilizável 200 pontos \n")
-          escreva("Digite a quantidade de pontos que deseja trocar: ")
-          leia(pontos)
-          se (pontos == 200 e saldos[indice]>= pontos ){
+          se ( saldos[indice]>= pontos ){
           saldos[indice] = saldos[indice] - pontos
           escreva("Sucesso! Você resgatou o Canudo Metálico Reutilizável!! \n")
           }senao{
@@ -220,10 +208,7 @@ programa {
 
         caso 5:
           limpa()
-          escreva("Suculenta no vaso Reciclável 100 pontos \n")
-          escreva("Digite a quantidade de pontos que deseja trocar: ")
-          leia(pontos)
-          se (pontos == 100 e saldos[indice]>= pontos ){
+          se (saldos[indice]>= pontos ){
           saldos[indice] = saldos[indice] - pontos
           escreva("Sucesso! Você resgatou a Suculenta no vaso Reciclável!! \n")
           }senao{
